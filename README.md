@@ -2,7 +2,7 @@
 
 [<img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Screen_Shot_2019-10-14_at_8-removebg-preview.png" width="53%" align="right"/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
 
-Annually, restaurants waste over 1/2 billion tons of food while nearly a billion people worldwide don't have access. 
+Annually, restaurants waste over 1/2 billion tons of food while nearly a billion people don't have access. 
 
 [**Donation Stations**](https://www.youtube.com/watch?v=drjXGNMaKk4) is the solution to both problems of food wastage and distribution.
 It is a mobile application that allows restaurants to reach out to homeless shelters (and vice versa) to donate any leftover  or uneaten food. 
