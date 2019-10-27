@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "66469693525",
+    "firebase_url": "https://restaurant-leftover-food.firebaseio.com",
+    "project_id": "restaurant-leftover-food",
+    "storage_bucket": "restaurant-leftover-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66469693525:android:818ea2fca4ac369f",
+        "android_client_info": {
+          "package_name": "com.example.anany.restaurantleftoverfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66469693525-d4rlhbd9qtkrp37kk03fmnn1jp7mr59k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4_DU79zAqd-mauidyb2FpbezJhAeOJQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

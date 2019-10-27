@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".InfoPages">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="@string/shelterinfo"
+            android:textAlignment="center"
+            android:textColor="#4e9213"
+            android:textSize="31sp" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="3sp"
+            android:layout_marginRight="5sp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#b22"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:id="@+id/typeHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/error"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <TextView
+            android:id="@+id/typeText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="9sp"
+            android:layout_toRightOf="@+id/typeHelp"
+            android:text="I am a"
+            android:textSize="23sp" />
+
+        <ToggleButton
+            android:id="@+id/togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="0sp"
+            android:layout_toRightOf="@id/typeText2"
+            android:background="@drawable/toggle_selector"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:textAllCaps="false"
+            android:textColor="#0eb016"
+            android:textOff="Shelter"
+            android:textOn="Restaurant"
+            android:textSize="24sp" />
+
+        <!--<ImageView
+            android:id="@+id/nameHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/togglebutton"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="24sp"
+            android:src="@drawable/helpicon" />
+
+        <EditText
+            android:id="@+id/tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/togglebutton"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="22sp"
+            android:layout_toRightOf="@+id/nameHelp"
+            android:background="@drawable/editbg"
+            android:fontFamily="@font/regular"
+            android:hint="Shelter Name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxEms="11"
+            android:maxLines="1"
+            android:minEms="5"
+            android:nextFocusForward="@+id/managerName"
+            android:paddingLeft="7sp"
+            android:paddingTop="4sp"
+            android:paddingRight="7sp"
+            android:paddingBottom="4sp"
+            android:singleLine="true"
+            android:textColorHint="#0eb016"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="22sp" />
+-->
+        <ImageView
+            android:id="@+id/managerHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/togglebutton"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="24sp"
+            android:src="@drawable/helpicon" />
+
+        <EditText
+            android:id="@+id/managerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/togglebutton"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="22sp"
+            android:layout_toRightOf="@+id/managerHelp"
+            android:background="@drawable/editbg"
+            android:fontFamily="@font/regular"
+            android:hint="Manager Name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxEms="11"
+            android:maxLines="1"
+            android:minEms="6"
+            android:nextFocusForward="@+id/auto"
+            android:paddingLeft="7sp"
+            android:paddingTop="4sp"
+            android:paddingRight="7sp"
+            android:paddingBottom="4sp"
+            android:singleLine="true"
+            android:textColorHint="#0dac15"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/addressHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/managerName"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="27sp"
+            android:src="@drawable/helpicon" />
+
+        <TextView
+            android:id="@+id/chooseAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/managerName"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="29sp"
+            android:layout_toRightOf="@+id/managerHelp"
+            android:fontFamily="@font/regular"
+            android:paddingLeft="7sp"
+            android:paddingTop="5sp"
+            android:paddingRight="7sp"
+            android:paddingBottom="5sp"
+            android:text="Enter the Name"
+            android:textColor="#2B7418"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:layout_marginTop="-4sp"
+            android:layout_marginRight="11sp"
+            android:background="@drawable/editbg"
+            android:layout_below="@id/chooseAddress">
+
+            <fragment
+                android:id="@+id/auto"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+
+        <!--<EditText
+            android:id="@+id/street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/managerName"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="22sp"
+            android:layout_toRightOf="@+id/managerHelp"
+            android:background="@drawable/editbg"
+            android:fontFamily="@font/regular"
+            android:hint="Address"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords|textPostalAddress"
+            android:maxEms="11"
+            android:maxLines="1"
+            android:minEms="8"
+            android:nextFocusForward="@+id/city"
+            android:paddingLeft="7sp"
+            android:paddingTop="5sp"
+            android:paddingRight="7sp"
+            android:paddingBottom="5sp"
+            android:singleLine="true"
+            android:textColorHint="#0dac15"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/pickMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/street"
+            android:layout_marginTop="5sp"
+            android:layout_weight="6"
+            android:background="@drawable/alternatebg"
+            android:paddingLeft="21sp"
+            android:paddingTop="2sp"
+            android:paddingRight="21sp"
+            android:layout_alignLeft="@+id/street"
+            android:paddingBottom="2sp"
+            android:text="Search in Map"
+            android:textAllCaps="false"
+            android:textColor="#3B963F"
+            android:textSize="22sp" />-->
+        <!--
+                <Button
+                    android:id="@+id/nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pickMap"
+                    android:layout_alignLeft="@+id/street"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="4"
+                    android:background="@drawable/alternatebg"
+                    android:paddingLeft="21sp"
+                    android:paddingTop="2sp"
+                    android:paddingRight="21sp"
+                    android:paddingBottom="2sp"
+                    android:text="Get Nearby Locations"
+                    android:textAllCaps="false"
+                    android:textColor="#3B963F"
+                    android:textSize="22sp" />-->
+
+        <!--<ImageView
+            android:id="@+id/map"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_below="@id/street"
+            android:layout_toRightOf="@id/pickMap"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3sp"
+            android:layout_marginLeft="-17sp"
+            android:src="@drawable/googlemaps" />-->
+
+
+        <!--<EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="12sp"
+            android:layout_toRightOf="@+id/nameHelp"
+            android:background="@drawable/editbg"
+            android:ellipsize="start"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:hint="City"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords|textPostalAddress"
+            android:maxEms="7"
+            android:maxLines="1"
+            android:minEms="4"
+            android:nextFocusForward="@+id/state"
+            android:paddingBottom="4sp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:paddingTop="4sp"
+            android:singleLine="true"
+            android:textColorHint="#0dac15"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="21sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/street"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/city"
+            android:background="@drawable/editbg"
+            android:completionThreshold="1"
+            android:ellipsize="start"
+            android:ems="3"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:hint="State"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLength="2"
+            android:nextFocusForward="@+id/username"
+            android:paddingBottom="4sp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:paddingTop="4sp"
+            android:singleLine="true"
+            android:textColorHint="#0dac15"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="21sp" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="15sp"
+            android:layout_below="@+id/rel"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/background1"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Account Info"
+            android:textAlignment="center"
+            android:textColor="#4e9213"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/error2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="-4sp"
+            android:layout_marginRight="5sp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#b22"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/userHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/error2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <RelativeLayout
+            android:id="@+id/relU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/error2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="0sp"
+            android:layout_toRightOf="@id/userHelp"
+            android:background="@drawable/smallbackground">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45sp"
+                android:background="@drawable/userpasswordbox"
+                android:paddingLeft="9sp"
+                android:paddingTop="4sp"
+                android:paddingRight="9sp"
+                android:paddingBottom="4sp">
+
+                <ImageView
+                    android:id="@+id/imgU"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1sp"
+                    android:src="@drawable/user" />
+
+                <RelativeLayout
+                    android:id="@+id/rel3"
+                    android:layout_width="3sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_toRightOf="@+id/imgU"
+                    android:background="#137300"></RelativeLayout>
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9sp"
+                    android:layout_toRightOf="@id/rel3"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/regular"
+                    android:hint="Username"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:nextFocusForward="@+id/password"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="3sp"
+                    android:paddingBottom="3sp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/passHelp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@id/relU"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="14sp"
+            android:src="@drawable/helpicon" />
+
+        <RelativeLayout
+            android:id="@+id/relP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relU"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_toRightOf="@+id/passHelp"
+            android:background="@drawable/smallbackground">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45sp"
+                android:background="@drawable/userpasswordbox"
+                android:paddingLeft="9sp"
+                android:paddingTop="4sp"
+                android:paddingRight="9sp"
+                android:paddingBottom="4sp">
+
+                <ImageView
+                    android:id="@+id/imgP"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="1sp"
+                    android:src="@drawable/pass" />
+
+                <RelativeLayout
+                    android:id="@+id/rel31"
+                    android:layout_width="3sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_toRightOf="@+id/imgP"
+                    android:background="#137300"></RelativeLayout>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9sp"
+                    android:layout_toRightOf="@id/rel31"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/regular"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="6sp"
+                    android:paddingTop="3sp"
+                    android:paddingBottom="3sp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor_color" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relP"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/re"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="6sp"
+            android:background="@drawable/bigbackground"
+            app:cardCornerRadius="13sp"
+            app:cardElevation="3sp">
+
+            <Button
+                android:id="@+id/nextB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0dac15"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:text="Next Page"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/invisi"
+            android:layout_toRightOf="@+id/re"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+</ScrollView>

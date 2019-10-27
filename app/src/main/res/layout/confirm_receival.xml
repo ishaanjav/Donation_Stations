@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Confirm Receival"
+            android:textAlignment="center"
+            android:textColor="#A06918"
+            android:textSize="38sp" />
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2sp"
+            android:background="#92702F"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:layout_marginTop="5sp"
+            android:text="Confirm your donation reception below and provide a message if you wish:"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="8sp"
+            android:paddingLeft="6sp"
+            android:textColorHint="#5A4B1A"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:paddingRight="4sp"
+            android:textColor="#000"
+            android:hint="Enter a message!"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/message" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/customt"
+            android:layout_below="@id/custom"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="#E4D5C8"
+                android:text="Not Received"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#A76002"
+                android:textSize="23sp" />
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="#A76002"
+                android:text="Received"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

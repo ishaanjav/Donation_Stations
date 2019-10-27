@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="#DDD3CC"
+    android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img"
+        android:layout_width="93sp"
+        android:layout_height="93sp"
+        android:layout_marginLeft="0sp"
+        android:src="@drawable/progress" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6sp"
+            android:layout_marginRight="10sp"
+            android:fontFamily="@font/ralewaybold"
+            android:text="Saving Info..."
+            android:textColor="#8B6932"
+            android:textSize="27sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

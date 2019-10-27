@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel2222"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/next"
+    app:cardCornerRadius="11sp"
+    app:cardElevation="11sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/container"
+            android:background="#C3D4F1"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="6sp"
+            android:text="Hello There!"
+            android:fontFamily="@font/ralewayblack"
+            android:textColor="#2E6DB8"
+            android:layout_centerHorizontal="true"
+            android:textSize="37sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:id="@+id/bar"
+            android:layout_below="@+id/container"
+            android:layout_marginTop="2sp"
+            android:background="#2e6dd8"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="10sp"
+            android:breakStrategy="simple"
+            android:layout_marginRight="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/regular"
+            android:id="@+id/t1"
+            android:text="@string/pleasedonate"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:layout_marginLeft="10sp"
+            android:breakStrategy="simple"
+            android:layout_marginRight="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/regular"
+            android:id="@+id/t2"
+            android:text="@string/pleasedonate2"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/t2"
+           android:id="@+id/donate"
+           android:text="Donate"
+           android:layout_marginTop="10sp"
+           android:textSize="27sp"
+           android:fontFamily="@font/remedium"
+           android:textAllCaps="false"
+           android:textColor = "#E3F1FF"
+           android:background="#0379D5"
+           />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

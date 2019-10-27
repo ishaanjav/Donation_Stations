@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF1E6">
+
+    <com.example.anany.restaurantleftoverfood.CancelableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/rsemibold"
+                android:text="@string/subtitle11"
+                android:textColor="#885626"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/numIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subtitle1"
+                android:layout_marginLeft="42sp"
+                android:layout_marginTop="8sp"
+                android:text="# of Donations:"
+                android:textColor="#665641"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/donations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subtitle1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9sp"
+                android:layout_marginRight="38sp"
+                android:fontFamily="@font/regular"
+                android:text="0"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/help2"
+                android:layout_width="26sp"
+                android:layout_height="26sp"
+                android:layout_below="@id/donations"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="8sp"
+                android:src="@drawable/helpicon" />
+
+
+            <TextView
+                android:id="@+id/pointsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donations"
+                android:layout_marginLeft="7sp"
+                android:layout_marginTop="5sp"
+                android:layout_toRightOf="@id/help2"
+                android:text="# of Donation Points:"
+                android:textColor="#665641"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donations"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8sp"
+                android:layout_marginRight="38sp"
+                android:fontFamily="@font/regular"
+                android:text="0"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/bigBox"
+                android:layout_width="match_parent"
+                android:layout_height="155sp"
+                android:layout_below="@+id/points"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginRight="3sp"
+                android:background="@drawable/latest2">
+
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="1sp"
+                    android:fontFamily="@font/remedium"
+                    android:text="Your Donations"
+                    android:textColor="#836211"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:id="@+id/bar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_below="@+id/t1"
+                    android:background="#8D7543"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/box1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar1"
+                    android:layout_marginBottom="3sp">
+
+                    <ImageView
+                        android:id="@+id/imgNoDonations"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/emptybox" />
+
+                    <TextView
+                        android:id="@+id/noDonations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgNoDonations"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0sp"
+                        android:layout_marginBottom="3sp"
+                        android:fontFamily="@font/regular"
+                        android:text="You haven't made any donations yet.\nStart by offering a donation below!"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar1"
+                    android:layout_marginTop="1sp"
+                    android:text="@string/status"
+                    android:id="@+id/statusT"
+                    android:visibility="invisible"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8sp"
+                    />
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="240sp"
+                    android:layout_below="@id/statusT"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginTop="-1sp"
+                    android:layout_marginRight="3sp"
+                    android:layout_marginBottom="0sp"
+                    android:focusable="false">
+
+                    <com.example.anany.restaurantleftoverfood.NonScroll
+                        android:id="@+id/donorsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#8D7543"
+                        android:dividerHeight="4sp"
+                        android:visibility="invisible"></com.example.anany.restaurantleftoverfood.NonScroll>
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bigBox"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22sp"
+                android:fontFamily="@font/rsemibold"
+                android:text="@string/subtitle12"
+                android:textColor="#885626"
+                android:textSize="34sp" />
+
+            <RelativeLayout
+                android:id="@+id/bigBox2"
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:layout_below="@+id/subtitle2"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="6sp"
+                android:layout_marginRight="3sp"
+                android:background="@drawable/latest2">
+
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="1sp"
+                    android:fontFamily="@font/remedium"
+                    android:text="Donation Requests"
+                    android:textColor="#836211"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:id="@+id/bar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_below="@id/t2"
+                    android:background="#8D7543"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/box2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar2"
+                    android:layout_marginBottom="3sp">
+
+                    <ImageView
+                        android:id="@+id/imgNoDonations2"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginBottom="3sp"
+                        android:src="@drawable/emptyclipboard" />
+
+                    <TextView
+                        android:id="@+id/noDonations2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="0sp"
+                        android:layout_marginRight="6sp"
+                        android:layout_toRightOf="@id/imgNoDonations2"
+                        android:fontFamily="@font/regular"
+                        android:text="You don't have any requests, but you can still make some offers below."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="240sp"
+                    android:layout_below="@id/bar2"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginRight="3sp"
+                    android:layout_marginBottom="0sp"
+                    android:focusable="false">
+
+                    <com.example.anany.restaurantleftoverfood.NonScroll
+                        android:id="@+id/donorsList2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#8D7543"
+                        android:dividerHeight="4sp"
+                        android:visibility="invisible"></com.example.anany.restaurantleftoverfood.NonScroll>
+                </android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/subtitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bigBox2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22sp"
+                android:fontFamily="@font/rsemibold"
+                android:text="@string/subtitle13"
+                android:textColor="#885626"
+                android:textSize="34sp" />
+
+            <RelativeLayout
+                android:id="@+id/bigBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle3"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="6sp"
+                android:layout_marginRight="3sp"
+                android:background="@drawable/latest2">
+
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginTop="1sp"
+                    android:fontFamily="@font/remedium"
+                    android:text="Make an Offer"
+                    android:textColor="#836211"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:id="@+id/bar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_below="@id/t3"
+                    android:background="#8D7543"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/box3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar3"
+                    android:layout_marginBottom="2sp">
+
+                    <ImageView
+                        android:id="@+id/imgNoDonations3"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_marginLeft="9sp"
+                        android:src="@drawable/invisible" />
+
+                    <TextView
+                        android:id="@+id/noDonations3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="0sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_toRightOf="@id/imgNoDonations3"
+                        android:fontFamily="@font/regular"
+                        android:text="There are no visible shelters in your area."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bar3"
+                    android:layout_marginLeft="3sp"
+                    android:layout_marginRight="3sp"
+                    android:layout_marginBottom="0sp"
+                    android:focusable="false">
+
+                    <com.example.anany.restaurantleftoverfood.NonScroll
+                        android:id="@+id/donorsList3"
+                        android:layout_width="match_parent"
+                        android:transcriptMode="normal"
+                        android:layout_height="wrap_content"
+                        android:divider="#8D7543"
+                        android:dividerHeight="4sp"
+                        android:visibility="invisible"></com.example.anany.restaurantleftoverfood.NonScroll>
+                </android.support.v4.widget.NestedScrollView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.example.anany.restaurantleftoverfood.CancelableScrollView>
+</android.support.design.widget.CoordinatorLayout>

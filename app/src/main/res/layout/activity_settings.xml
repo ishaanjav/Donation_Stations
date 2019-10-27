@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="#4e9213"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/typeText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="17sp"
+            android:layout_marginTop="15sp"
+            android:text="Make me discoverable to: "
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/typeHelp"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_below="@id/typeText2"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeText2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@id/typeHelp"
+            android:fontFamily="@font/remedium"
+            android:text="Hello"
+            android:textColor="#0ca313"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/typeText2"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginTop="9sp"
+            android:layout_toRightOf="@id/text1"
+            android:switchMinWidth="70sp"
+            android:text=""
+            android:theme="@style/SCBSwitch" />
+
+        <ImageView
+            android:id="@+id/typeHelp2"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_below="@id/switch1"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="8sp"
+            android:layout_toRightOf="@id/typeHelp2"
+            android:fontFamily="@font/remedium"
+            android:text="Hello"
+            android:textColor="#0ca313"
+            android:textSize="24sp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="70sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/switch1"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginTop="9sp"
+            android:layout_toRightOf="@id/text2"
+            android:switchMinWidth="70sp"
+            android:text=""
+            android:theme="@style/SCBSwitch" />
+
+
+        <TextView
+            android:id="@+id/showOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeHelp2"
+            android:layout_marginLeft="17sp"
+            android:layout_marginTop="24sp"
+            android:text="Show other shelters in:"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/listHelp"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_below="@id/showOther"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/showOther"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/listHelp"
+            android:fontFamily="@font/remedium"
+            android:buttonTint="#0ca313"
+            android:text=" the List"
+            android:textColor="#0ca313"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/mapHelp"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_below="@id/check1"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="9sp"
+            android:src="@drawable/helpicon" />
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/check1"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/mapHelp"
+            android:fontFamily="@font/remedium"
+            android:text=" the Map"
+            android:buttonTint="#0ca313"
+            android:textColor="#0ca313"
+            android:textSize="24sp" />
+
+
+
+        <ImageView
+            android:id="@+id/searchHelp"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_below="@id/check2"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="30sp"
+            android:src="@drawable/helpicon" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check2"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="29sp"
+            android:layout_toRightOf="@id/searchHelp"
+            android:fontFamily="@font/remedium"
+            android:text="Search Radius:"
+            android:textColor="#0ca313"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/check2"
+            android:layout_marginTop="25sp"
+            android:layout_toRightOf="@id/search"
+            android:text="" />
+
+        <AutoCompleteTextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/invisible"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="0sp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/units"
+            android:background="@drawable/editbg"
+            android:completionThreshold="1"
+            android:ellipsize="start"
+            android:ems="2"
+            android:fontFamily="@font/regular"
+            android:gravity="center_horizontal"
+            android:hint=""
+            android:imeOptions="actionDone"
+            android:text="30"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingBottom="4sp"
+            android:paddingLeft="7sp"
+            android:paddingRight="7sp"
+            android:paddingTop="4sp"
+            android:singleLine="true"
+            android:textColorHint="#0dac15"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="21sp" />
+
+        <Spinner
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/invisible"
+            android:layout_marginRight="-10sp"
+            android:layout_marginTop="23sp"
+            android:layout_toLeftOf="@id/invisible"
+            android:entries="@array/units"
+            android:textSize="23sp"></Spinner>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/units"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/bigbackground"
+            app:cardCornerRadius="13sp"
+            app:cardElevation="3sp">
+
+            <Button
+                android:id="@+id/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0dac15"
+                android:paddingLeft="23sp"
+                android:paddingRight="23sp"
+                android:text="Finish!"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

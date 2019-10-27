@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Restaurant"
+    >
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/caviarbold"
+        android:text="@string/restaurant"
+        android:textAlignment="center"
+        android:textColor="#346609"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor = "#53a110"
+        android:textSize = "22sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/re2"
+        android:layout_below="@id/next"
+        android:text = "*Restaurant Name:"
+        android:textAlignment = "center"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re2"
+        android:layout_marginTop="-2sp"
+        android:id = "@+id/restaurantName"
+        android:backgroundTint="#75f555"
+        android:layout_marginLeft="13sp"
+        android:textColor="#026823"
+        android:ems="13"
+        android:inputType="textCapWords"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor = "#53a110"
+        android:layout_marginTop = "10sp"
+        android:textSize = "22sp"
+        android:layout_below="@+id/restaurantName"
+        android:layout_marginLeft="10sp"
+        android:text = "Owner Name: "
+        android:id = "@+id/nameQuestion"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameQuestion"
+        android:layout_marginTop="-2sp"
+        android:backgroundTint="#75f555"
+        android:ems="12"
+        android:textColor="#026823"
+        android:inputType="textPersonName|textCapWords"
+        android:id = "@+id/managerName"
+        android:layout_marginLeft="13sp"
+        />
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor = "#53a110"
+        android:layout_below = "@+id/managerName"
+        android:layout_marginTop = "10sp"
+        android:textSize = "22sp"
+        android:layout_marginLeft="10sp"
+        android:text = "*Contact Phone #: "
+        android:id = "@+id/restNameQuestion"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restNameQuestion"
+        android:layout_marginTop="-2sp"
+        android:backgroundTint="#75f555"
+        android:inputType="phone"
+        android:ems="9"
+        android:textColor="#026823"
+        android:id = "@+id/phoneNum"
+        android:layout_marginLeft="10sp"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor = "#53a110"
+        android:layout_below = "@+id/phoneNum"
+        android:layout_marginTop = "10sp"
+        android:textSize = "22sp"
+        android:layout_marginLeft="10sp"
+        android:text = "*Address"
+        android:id = "@+id/question2"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question2"
+        android:layout_marginTop="-2sp"
+        android:backgroundTint="#75f555"
+        android:inputType="textPostalAddress"
+        android:ems="15"
+        android:textColorHint="#3b7f51"
+        android:hint="Number  Street, City, State"
+        android:textColor="#026823"
+        android:id = "@+id/address"
+        android:layout_marginLeft="13sp"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor = "#53a110"
+        android:layout_below = "@+id/address"
+        android:layout_marginTop = "10sp"
+        android:textSize = "22sp"
+        android:layout_marginLeft="10sp"
+        android:text = "*Closing Time:"
+        android:id = "@+id/question8"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_below="@id/question8"
+        android:id = "@+id/time1"
+        android:layout_marginTop="6sp"
+        android:layout_marginLeft="15sp"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15sp"
+        app:cardCornerRadius="11sp"
+        app:cardElevation="5sp">
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#346609"
+            android:text="Finish"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

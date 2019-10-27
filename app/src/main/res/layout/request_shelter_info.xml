@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slback3"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/rsemibold"
+            android:paddingBottom="2sp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#754817"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/managerT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:text="Manager: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/managerT"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+
+        <TextView
+            android:id="@+id/addressT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manager"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:text="Address: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manager"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/addressT"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/distanceT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:text="Distance: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/distanceT"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/phoneT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:text="Phone #: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/distance"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="6sp"
+            android:layout_toRightOf="@id/phoneT"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/websiteT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:text="Website: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/websiteT"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="1sp"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/webImage"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="1sp"
+                android:layout_marginRight="10sp"
+                android:src="@drawable/websiteo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hoursT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website"
+            android:layout_marginLeft="7sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/remedium"
+            android:text="Open Hours: "
+            android:textColor="#A26B3D"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hoursT"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/regular"
+            android:text=""
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours"
+            android:layout_marginLeft="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="3sp"
+            android:layout_marginBottom="3sp"
+            android:background="#9B7637"
+            android:orientation="horizontal"
+            android:text="Get Directions"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

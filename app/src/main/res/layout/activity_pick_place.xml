@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/frame"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/caviarbold"
+            android:paddingTop="8sp"
+            android:background="@drawable/mapbg"
+            android:paddingBottom="6sp"
+            android:textColor="#179618"
+            android:text="Choose The Location"
+            android:textAlignment="center"
+            android:textSize="35sp" />
+
+        <fragment
+            android:id="@+id/autocomplete_support_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scroll"
+            android:layout_below="@id/autocomplete_support_fragment"
+            android:layout_height="100sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                />
+
+        </ScrollView>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:layout_above="@+id/returnB"
+            tools:context=".pickPlace" />
+        <Button
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:text="Return Back"
+            android:id="@+id/returnB"
+            android:textColor="#469E25"
+            android:background="#E0FDD5"
+            android:layout_alignParentBottom="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</FrameLayout>

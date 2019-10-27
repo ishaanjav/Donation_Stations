@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="#e4ffd0"
+    android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img"
+        android:layout_width="93sp"
+        android:layout_height="93sp"
+        android:layout_marginLeft="0sp"
+        android:src="@drawable/progress" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6sp"
+            android:layout_marginRight="10sp"
+            android:fontFamily="@font/ralewaybold"
+            android:text="Processing..."
+            android:textColor="#057A26"
+            android:textSize="29sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel2222"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/next"
+    app:cardCornerRadius="24sp"
+    app:cardElevation="11sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDFFDC">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="6sp"
+            android:text="@string/about"
+            android:textColor="#1A971B"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="15sp"
+            android:breakStrategy="simple"
+            android:layout_marginRight="7sp"
+            android:layout_marginTop="2sp"
+            android:fontFamily="@font/rlight"
+            android:id="@+id/t1"
+            android:text="The purpose of this app is to help shelters easily find restaurants that are willing to donate extra or leftover food and vice versa."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="7sp"
+            android:breakStrategy="simple"
+            android:id="@+id/t2"
+            android:layout_marginRight="7sp"
+            android:fontFamily="@font/rlight"
+            android:text="Using this app, restaurants can convey to shelters whether they have food to donate and shelters can convey the amount of food they need and when."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="15sp"
+            android:breakStrategy="simple"
+            android:layout_marginTop="7sp"
+            android:layout_marginRight="7sp"
+            android:fontFamily="@font/rlight"
+            android:text="Thus, the shelters will be able to receive donations while having seamless communication with donors."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

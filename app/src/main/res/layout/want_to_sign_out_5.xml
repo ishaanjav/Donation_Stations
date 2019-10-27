@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_back6"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Homepage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:fontFamily="@font/caviarbold"
+            android:text="Are You Sure?"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#1E6915"
+            android:layout_marginTop="6sp"
+            android:textSize="35sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/bar"
+            android:layout_below="@id/title"
+            android:background="#296F1B"
+            android:layout_marginTop="-2sp"
+            android:layout_height="5sp"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11sp"
+            android:layout_below="@id/bar"
+            android:layout_marginRight="11sp"
+            android:textAlignment="center"
+            android:layout_marginTop="3sp"
+            android:text="Do you want to sign out?"
+            android:textSize="21sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="#ffff"
+                android:text="No"
+                android:layout_weight="40"
+                android:textAllCaps="false"
+                android:textColor="#249421"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="@drawable/btrn4"
+                android:id="@+id/yes"
+                android:text="Yes"
+                android:layout_weight="60"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

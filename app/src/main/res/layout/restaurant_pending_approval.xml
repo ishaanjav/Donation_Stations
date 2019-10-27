@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shelterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4sp"
+            android:layout_marginTop="3sp"
+            android:layout_marginRight="3sp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/statusText"
+            android:fontFamily="@font/rsemibold"
+            android:textColor="#92613F"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Pending\nApproval"
+            android:textColor="#DB1212"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shelter2334e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="2sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Date:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="3sp"
+            android:layout_toLeftOf="@id/statusText"
+            android:layout_toRightOf="@id/shelter2334e"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shelter2334"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Manager:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginRight="3sp"
+            android:layout_toLeftOf="@id/statusText"
+            android:layout_toRightOf="@id/shelter2334"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shelter233"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Phone:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="1sp"
+            android:layout_toRightOf="@id/shelter233"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/copy"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@+id/manager"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2sp"
+            android:layout_marginRight="3sp"
+            android:src="@drawable/bclipboard" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_below="@+id/manager"
+            android:layout_marginTop="1sp"
+            android:layout_marginRight="15sp"
+            android:layout_toLeftOf="@+id/copy"
+            android:src="@drawable/phoneo" />
+
+        <TextView
+            android:id="@+id/shelter234o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Message: "
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelter234o"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55sp"
+            android:layout_marginTop="-1sp"
+            android:layout_marginBottom="2sp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35sp"
+                android:layout_weight="90"
+                android:background="#944835"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

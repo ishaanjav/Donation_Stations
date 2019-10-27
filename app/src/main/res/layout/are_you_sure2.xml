@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Are You Sure?"
+            android:textAlignment="center"
+            android:textColor="#4e9213"
+            android:textSize="38sp" />
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2sp"
+            android:background="#4e9213"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:layout_marginTop="5sp"
+            android:text="Have you written down your username and password somewhere and is everything you have entered accurate, most importantly the address?"
+            android:textSize="21sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_below="@id/message"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/stay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="#DDFFCD"
+                android:text="No"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#0dac15"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/continueN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="#0dac15"
+                android:text="Yes"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

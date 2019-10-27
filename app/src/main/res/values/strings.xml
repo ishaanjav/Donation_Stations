@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Donation Stations</string>
+    <string name="title_activity_maps">Donation Stations</string>
+    <string name="title_activity_shelter">Shelter Setup</string>
+    <string name="initialsetup"><u>Initial Setup</u></string>
+    <string name="about"><u>About This App</u></string>
+    <string name="restaurant"><u>Restaurant Info</u></string>
+    <string name="shelter"><u>Shelter Info</u></string>
+    <string name="haveaccount"><u>Have an Account?</u></string>
+    <string name="newuser"><u>New User?</u></string>
+    <string name="forgotUsername"><u>Forgot Your</u></string>
+    <string name="forgotPassword"><u>Forgot Your Password?</u></string>
+    <string name="forgotVerification"><u>Forgot Your Verification Code?</u></string>
+    <string name="title_activity_info_pages">InfoPages</string>
+    <string name="shelterinfo"><u>Shelter Info</u></string>
+    <string name="restaurantinfo"><u>Restaurant Info</u></string>
+    <string name="settings"><u>Settings</u></string>
+    <string name="changesettings"><u>Change Your Settings</u></string>
+    <string name="verify"><u>Verify Your Account</u></string>
+    <string name="leaderboardtitle"><u>Donations Leaderboard</u></string>
+    <string name="pleasedonate2">As a result, we would greatly appreciate any donations that you could make to IJ Apps at <u>this link.</u></string>
+    <string name="pleasedonate">Although this app is totally free, we at IJ Apps have to pay for certain feature that you use.</string>
+
+    <string name="editaccount"><u>Edit Your Account</u></string>
+    <string name="status"><u>Status</u></string>
+<string name="pend">Pending Offers</string>
+    <string-array name="forgot">
+        <item><u>Username?</u></item>
+        <item><u>Password?</u></item>
+        <item><u>Verification Code?</u></item>
+    </string-array>
+    <string name="meta_position">meta_position</string>
+    <string name="meta_title">meta_title</string>
+
+    <string-array name="units">
+        <item>mi</item>
+        <item>km</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Doing Fine</item>
+        <item>Near Future</item>
+        <item>Soon</item>
+        <item>Urgent</item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="tab_text_1">Home Page</string>
+    <string name="tab_text_2">List</string>
+    <string name="tab_text_3">Map</string>
+    <string name="tab_text_4">Settings</string>
+    <string name="subtitle1"><u>Info In Your Area - </u></string>
+
+    <string name="subtitle11"><u>Information</u></string>
+    <string name="subtitle12"><u>Accept Requests</u></string>
+    <string name="subtitle13"><u>Offer Donations</u></string>
+
+    <string name="subtitle21"><u>Information</u></string>
+    <string name="subtitle22"><u>Accept Offers</u></string>
+    <string name="subtitle23"><u>Request Donations</u></string>
+
+    <string name="subtitle2"><u>Explore Other Pages - </u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homeU"><u>Home</u></string>
+    <string name="tab_text_5">Donations</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#bde2fe"
+        android:id = "@+id/rel"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/caviarbold"
+            android:paddingBottom="6sp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#0078ef"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_below="@id/rel"
+        android:dividerHeight="7sp"
+        android:divider="#528ef6"
+        android:id = "@+id/list"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:id="@+id/viewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2786f9"
+        android:text="View Map"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+</RelativeLayout>

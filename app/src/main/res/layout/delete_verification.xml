@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="@drawable/deleted_back"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Verification Required"
+            android:textAlignment="center"
+            android:textColor="#974444"
+            android:textSize="34sp" />
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2sp"
+            android:background="#FF0000"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginRight="5sp"
+            android:textAlignment="center"
+            android:textColor="#b22"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/error"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:textAlignment="center"
+            android:ems="7"
+            android:fontFamily="@font/regular"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:layout_marginTop="1sp"
+            android:hint="Username"
+            android:textColorHint="#9E4747"
+            android:background="@drawable/deleted_btn_bg"
+            android:nextFocusForward="@+id/password"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:layout_marginLeft="6sp"
+            android:layout_marginRight="6sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:background="@drawable/deleted_btn_bg"
+            android:ems="7"
+            android:fontFamily="@font/regular"
+            android:nextFocusForward="@+id/VC"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="8sp"
+            android:hint="Password"
+            android:textColorHint="#9E4747"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/VC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:background="@drawable/deleted_btn_bg"
+            android:fontFamily="@font/regular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:inputType="numberPassword"
+            android:paddingRight="5sp"
+            android:paddingLeft="5sp"
+            android:imeOptions="actionDone"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:hint="Verification Code"
+            android:textColorHint="#9E4747"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_below="@id/VC"
+            android:orientation="horizontal"
+            android:layout_marginTop="9sp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#C94040"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C94040"
+                android:text="Delete"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

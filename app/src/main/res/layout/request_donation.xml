@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shelterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/rsemibold"
+            android:textColor="#92613F"
+            android:textSize="23sp" />
+
+
+        <TextView
+            android:id="@+id/shelter2334"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Manager:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="2sp"
+            android:layout_toRightOf="@id/shelter2334"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/specialT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Rating:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="9sp"
+            android:layout_marginTop="2sp"
+            android:layout_toRightOf="@id/star5"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="6sp"
+            android:layout_toRightOf="@id/specialT"
+           android:layout_marginTop="2sp"
+            android:src="@drawable/emptystar" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="2sp"
+            android:layout_below="@+id/manager"
+            android:layout_toRightOf="@id/star1"
+            android:src="@drawable/emptystar" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="25sp"
+            android:layout_marginTop="2sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/manager"
+            android:layout_toRightOf="@id/star2"
+            android:src="@drawable/emptystar" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_marginTop="2sp"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_below="@+id/manager"
+            android:layout_toRightOf="@id/star3"
+            android:src="@drawable/emptystar" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginTop="2sp"
+            android:layout_below="@+id/manager"
+            android:layout_toRightOf="@id/star4"
+            android:src="@drawable/emptystar" />
+
+        <TextView
+            android:id="@+id/shelter23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Distance:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="1sp"
+            android:layout_toRightOf="@id/shelter23"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shelter233"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="3sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Phone:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="1sp"
+            android:layout_toRightOf="@id/shelter233"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/copy"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_below="@+id/distance"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2sp"
+            android:layout_marginRight="3sp"
+            android:src="@drawable/bclipboard" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_below="@+id/distance"
+            android:layout_marginTop="-3sp"
+            android:layout_marginRight="15sp"
+            android:layout_toLeftOf="@+id/copy"
+            android:src="@drawable/phoneo" />
+
+        <TextView
+            android:id="@+id/shelter234o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="2sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Open Hours:"
+            android:textColor="#B67645"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelter234o"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="-1sp"
+            android:layout_marginBottom="5sp"
+            android:layout_toRightOf="@id/shelter234o"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="90"
+                android:background="#946135"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:text="Make Request"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/moreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="50"
+                android:background="#F7DFD3"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:text="View More Info"
+                android:textAllCaps="false"
+                android:textColor="#8F5D32"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shelterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6sp"
+            android:fontFamily="@font/rsemibold"
+            android:textAlignment="center"
+            android:textColor="#BB1A1A"
+            android:textSize="27sp" />
+
+        <RelativeLayout
+            android:id="@+id/images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shelterName"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18sp"
+            android:layout_marginRight="6sp">
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="48sp"
+                android:layout_height="48sp"
+                android:src="@drawable/phoneo" />
+
+            <ImageView
+                android:id="@+id/web"
+                android:layout_width="52sp"
+                android:layout_height="52sp"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="13sp"
+                android:src="@drawable/websiteo" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shelter2334"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="12sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Distance:"
+            android:textColor="#D82121"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/shelterDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="9sp"
+            android:layout_toLeftOf="@id/images"
+            android:layout_toRightOf="@id/shelter2334"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/specialT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterDistance"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="7sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="*Food Needed:"
+            android:textColor="#D82121"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterDistance"
+            android:layout_marginLeft="9sp"
+            android:layout_marginTop="4sp"
+            android:layout_toLeftOf="@id/images"
+            android:layout_toRightOf="@id/specialT"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/shelter23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/special"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="7sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Manager Name:"
+            android:textColor="#D82121"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/shelterManagerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/special"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="4sp"
+            android:layout_toLeftOf="@id/images"
+            android:layout_toRightOf="@id/shelter23"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/shelter234o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelterManagerName"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="7sp"
+            android:fontFamily="@font/rsemibold"
+            android:text="Open Hours Today:"
+            android:textColor="#D82121"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/shelterHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shelter234o"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="15sp"
+            android:layout_toRightOf="@id/shelter234o"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shelterHours"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/moreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="55"
+                android:background="#550404"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="View More Info"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="47"
+                android:background="#FFC5C5"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:text="View In Map"
+                android:textAllCaps="false"
+                android:textColor="#550404"
+                android:textSize="23sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSettings">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="5sp"
+        app:cardCornerRadius="15sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@id/rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="9sp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="@string/settings"
+                    android:textColor="#1C8624"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title2"
+                    android:layout_marginLeft="23sp"
+                    android:layout_marginTop="35sp"
+                    android:fontFamily="@font/rsemibold"
+                    android:text="What do you want to change?"
+                    android:textSize="27sp" />
+
+                <Button
+                    android:id="@+id/changeSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/settingsbtn1"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:text="App Settings"
+                    android:textAllCaps="false"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/changeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/changeSettings"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/settingsbtn1"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:text="Account Info"
+                    android:textAllCaps="false"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/VC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/changeInfo"
+                    android:layout_marginTop="30sp"
+                    android:background="#52B956"
+                    android:text="View Verification Code"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel"
+                android:background="#fff"
+                android:paddingTop="40sp">
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29sp"
+                    android:layout_marginRight="29sp"
+                    android:background="@drawable/delete_account"
+                    android:text="Delete my Account"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

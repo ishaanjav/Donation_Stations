@@ -1,0 +1,20 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- This is the stroke you want to define -->
+    <stroke
+        android:width="4sp"
+        android:color="#137300" />
+
+    <!-- Optional, round your corners -->
+    <corners
+        android:bottomLeftRadius="19dp"
+        android:bottomRightRadius="19dp"
+        android:topLeftRadius="19dp"
+        android:topRightRadius="19dp" />
+
+    <!-- Optional, fill the rest of your background with a color or gradient, use transparent if you only want the border to be displayed-->
+    <gradient
+        android:angle="90"
+        android:endColor="#d9ffb6"
+        android:startColor="#d9ffb6" />
+</shape>

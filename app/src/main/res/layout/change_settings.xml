@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_back"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Setup"
+            android:textAlignment="center"
+            android:textColor="#4e9213"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2sp"
+            android:background="#4e9213"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginTop="5sp"
+            android:text="Fill in all of the information and then you'll be good to go!"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="@drawable/btn1"
+                android:text="Yes"
+                android:layout_weight="57"
+                android:textAllCaps="false"
+                android:textColor="#0dac15"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:background="@drawable/btn2"
+                android:id="@+id/no"
+                android:text="No"
+                android:layout_weight="43"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

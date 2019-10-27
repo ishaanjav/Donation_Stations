@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/caviarbold"
+            android:text="Are You Sure?"
+            android:textAlignment="center"
+            android:textColor="#A27340"
+            android:textSize="36sp" />
+
+        <RelativeLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="2sp"
+            android:background="#B38648"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_marginLeft="6sp"
+            android:textColor="#8F6840"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/remedium"
+            android:layout_marginRight="6sp"
+            android:text="You have specified the following:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/details"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="13sp"
+            android:fontFamily="@font/regular"
+            android:layout_marginRight="6sp"
+            android:text="Before your request is sent to"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="6sp"
+            android:layout_marginBottom="8sp"
+            android:paddingLeft="6sp"
+            android:textColorHint="#5A4B1A"
+            android:paddingTop="3sp"
+            android:paddingBottom="3sp"
+            android:paddingRight="4sp"
+            android:textColor="#000"
+            android:hint="Enter a custom message!"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/message" />
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:layout_marginTop="5sp"
+                android:layout_weight="1"
+                android:background="#EEDDCB"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="#AA7942"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:layout_marginTop="5sp"
+                android:layout_weight="1"
+                android:background="#9B7637"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
