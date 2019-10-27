@@ -1,6 +1,6 @@
 # Donation Stations
 
-[<img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Screen_Shot_2019-10-14_at_8-removebg-preview.png" width="50%" align="right"/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
+[<img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Screen_Shot_2019-10-14_at_8-removebg-preview.png" width="53%" align="right"/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
 
 Each year restaurants waste over 1/2 billion tons of food while nearly a billion people worldwide don't have access. 
 
@@ -32,5 +32,5 @@ The code for the Donation Stations app has been committed to this repository. Qu
 - [**XML Files**](https://github.com/ishaanjav/Donation_Stations/tree/master/app/src/main/res)
    - [**Layout Files**](https://github.com/ishaanjav/Donation_Stations/tree/master/app/src/main/res/layout)
 
-[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Code%20Gif.gif" width="42%"/> <p/>](https://github.com/ishaanjav/Donation_Stations/tree/master/app/src/main)
+[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Code%20gif.gif" width="53%"/> <p/>](https://github.com/ishaanjav/Donation_Stations/tree/master/app/src/main)
 
