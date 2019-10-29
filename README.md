@@ -16,7 +16,7 @@ receive directions to travel to the restaurant to collect their donation.
 
 --------
 ## Demonstration
-The demonstration video of the app can be found at [**this link**](https://www.youtube.com/watch?v=hO3fDi2I73Y) on the [*IJ Apps YouTube Channel*](https://www.youtube.com/channel/UCLQUpH7SdkAXAeK6jeeF8zg/) or by clicking on the image below:
+The demonstration video of the app can be found at [**this link**](https://www.youtube.com/watch?v=hO3fDi2I73Y) or by clicking on the image below:
 
 [<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Video%20Thumbnail.png" width="90%"/> <p/>](https://www.youtube.com/watch?v=hO3fDi2I73Y)
 
