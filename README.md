@@ -1,10 +1,10 @@
 # Donation Stations
 
-[<img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Screen_Shot_2019-10-14_at_8-removebg-preview.png" width="53%" align="right"/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
+[<img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Screen_Shot_2019-10-14_at_8-removebg-preview.png" width="53%" align="right"/>](https://www.youtube.com/watch?v=hO3fDi2I73Y)
 
 Annually, restaurants waste over 1/2 billion tons of food while nearly a billion people don't have access. 
 
-[**Donation Stations**](https://www.youtube.com/watch?v=drjXGNMaKk4) is the solution to both problems of food wastage and distribution.
+[**Donation Stations**](https://www.youtube.com/watch?v=hO3fDi2I73Y) is the solution to both problems of food wastage and distribution.
 It is a mobile application that allows restaurants to reach out to homeless shelters (and vice versa) to donate any leftover  or uneaten food. 
 
 Via Donation Stations, shelters can contact potential donors through an informative search experience with detailed 
@@ -16,13 +16,13 @@ receive directions to travel to the restaurant to collect their donation.
 
 --------
 ## Demonstration
-The demonstration video of the app can be found at [**this link**](https://www.youtube.com/watch?v=drjXGNMaKk4) or by clicking on the image below:
+The demonstration video of the app can be found at [**this link**](https://www.youtube.com/watch?v=hO3fDi2I73Y) on the [*IJ Apps YouTube Channel*](https://www.youtube.com/channel/UCLQUpH7SdkAXAeK6jeeF8zg/) or by clicking on the image below:
 
-[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Video%20Thumbnail.png" width="90%"/> <p/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
+[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Video%20Thumbnail.png" width="90%"/> <p/>](https://www.youtube.com/watch?v=hO3fDi2I73Y)
 
 --------
 
-[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Best%20in%20the%20Nation!!!.png" width="101%"/> <p/>](https://www.youtube.com/watch?v=drjXGNMaKk4)
+[<p align="center"><img src = "https://github.com/ishaanjav/Donation_Stations/blob/master/Best%20in%20the%20Nation!!!.png" width="101%"/> <p/>](https://www.youtube.com/watch?v=hO3fDi2I73Y)
 
 --------
 ## Code
